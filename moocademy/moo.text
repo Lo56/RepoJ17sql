@@ -1,0 +1,16 @@
+
+CREATE TABLE `platform` (
+`platform_id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT,
+`title` TEXT,
+`description` TEXT
+);
+
+CREATE TABLE `lessons` (
+`lesson_id` INTEGER PRIMARY KEY AUTOINCREMENT, 
+`platform_id` INTEGER FOREIGN KEY,
+`name` TEXT,
+`title` TEXT,
+`body` TEXT
+);
+
+
